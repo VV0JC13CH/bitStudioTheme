@@ -1,0 +1,2 @@
+== 22.07.2019  bitStudioTheme  v0.0.9 ==
+- first release
