@@ -22,33 +22,40 @@
 	<body <?php body_class(); ?>>
 			<header class="site-header clear">
 					<div class="site-branding">
-
-						<?php if ( is_front_page() && is_home() ) : ?>
 						<?php the_custom_logo(); ?>
-							<h1 class="site-title">				
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-									<?php bloginfo( 'name' ); ?>
-								</a>
-							</h1>
-							
-
-						<?php else : ?>
-                        <?php the_custom_logo(); ?>
-							<p class="site-title">
+						<p class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							</p>
-
-						<?php endif; ?>
+						<p class="site-description">
+									<?php bloginfo( 'description' ); ?>
+							</p>
 
 					</div>
-					
 					<!-- .site-branding -->
-					<nav id="site-navigation" class="menu-1">
+
+<?php if ( has_nav_menu( 'menu-social' ) ) : ?>
+<nav class="menu-icons-navigation" role="navigation" aria-label="<?php esc_attr_e( 'SVG Icons Navigation', 'bitstudiotheme' ); ?>">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-social',
+					'menu_id'        => 'menu-social',
+					'menu_class'     => 'menu',
+					'link_before'    => '<span class="screen-reader-text">',
+					'link_after'     => '</span>' . bitstudiotheme_get_icon_svg( 'link' ),
+					'depth'          => 1,
+				)
+			);
+			?>
+		</nav><!-- .menu-social-navigation -->
+		<?php endif; ?>
+
+					<nav id="site-navigation" class="menu-header">
 							<?php
 							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
+								'theme_location' => 'menu-header',
 								'menu_id'        => 'site-menu',
 								'depth'          => 1,
 								'fallback_cb'    => false,

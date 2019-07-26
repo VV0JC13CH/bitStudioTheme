@@ -30,7 +30,7 @@
 	<div class="entry-content">
 
 		<?php
-		the_content( esc_html__( 'Continue reading &rarr;', 'bitStudioTheme' ) );
+		the_content( esc_html__( '', 'bitStudioTheme' ) );
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bitStudioTheme' ),

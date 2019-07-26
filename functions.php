@@ -2,9 +2,8 @@
 /**
  * bitStudioTheme functions and definitions
  *
- * @link       https://developer.wordpress.org/themes/basics/theme-functions/
- *
  * @package    bitStudioTheme
+ * @link       https://bitstudio.dev
  * @copyright  Copyright (c) 2019, Wojciech Bobrowski
  * @license    http://opensource.org/licenses/gpl-3.0.php GNU Public License
  */
@@ -40,7 +39,10 @@ if ( ! function_exists( 'bitStudioTheme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary Menu', 'bitStudioTheme' ),
+				'menu-header' => esc_html__( 'Header menu', 'bitStudioTheme' ),
+				'menu-footer' => esc_html__( 'Footer menu', 'bitStudioTheme' ),
+				'menu-social' => esc_html__( 'SVG icons menu', 'bitStudioTheme' ),
+
 			)
 		);
         // Add custom logo support
@@ -98,7 +100,7 @@ add_action( 'after_setup_theme', 'bitStudioTheme_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function bitStudioTheme_scripts() {
-	wp_enqueue_style( 'bitStudioTheme-style', get_stylesheet_uri(), array(), '0.0.9' );
+	wp_enqueue_style( 'bitStudioTheme-style', get_stylesheet_uri(), array(), '0.1.0' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -212,3 +214,14 @@ function bitStudioTheme_dismiss_admin_notice() {
 	}
 }
 add_action( 'admin_init', 'bitStudioTheme_dismiss_admin_notice' );
+
+
+/**
+ * SVG Icons class.
+ */
+require get_template_directory() . '/classes/class-bitstudiotheme-svg-icons.php';
+
+/**
+ * SVG Icons related functions.
+ */
+require get_template_directory() . '/inc/icon-functions.php';
