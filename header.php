@@ -34,7 +34,8 @@
 
 					</div>
 					<!-- .site-branding -->
-
+					</header><!-- .site-header -->
+<div class="header-navigation">
 <?php if ( has_nav_menu( 'menu-social' ) ) : ?>
 <nav class="menu-icons-navigation" role="navigation" aria-label="<?php esc_attr_e( 'SVG Icons Navigation', 'bitstudiotheme' ); ?>">
 			<?php
@@ -49,7 +50,7 @@
 				)
 			);
 			?>
-		</nav><!-- .menu-social-navigation -->
+		</nav><!-- .menu-social-->
 		<?php endif; ?>
 
 					<nav id="site-navigation" class="menu-header">
@@ -61,7 +62,8 @@
 								'fallback_cb'    => false,
 							) );
 							?>
-					</nav><!-- .menu-1 -->
-			</header><!-- .site-header -->
+					</nav><!-- .menu-header -->
+					</div>
+
 			<div class="site-content">
 					<div class="content-area">

@@ -4,7 +4,7 @@ Theme URI: https://github.com/bitStudioDev/wp-bitStudioTheme
 Author: Wojciech Bobrowski
 Author URI: https://bitstudio.dev
 Description: bitStudioTheme is fast.
-Version: 0.1.0
+Version: 0.1.1
 License: GNU General Public License v3 or later
 Text Domain: bitStudioTheme
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -643,7 +643,7 @@ body {
 --------------------------------------------------------------*/
 
 .site-header {
-	padding: 25px 0 25px 0;
+	padding: 25px 0 5px 0;
 	text-align: center;
 
 }
@@ -691,8 +691,19 @@ body {
     height: 64px;
     margin: auto;
 }
-
-
+/*--------------------------------------------------------------
+# Sticky Navigation
+--------------------------------------------------------------*/
+.header-navigation {
+    position: -webkit-sticky; /* Safari & IE */
+    position: sticky;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    background: #FFFFFF;
+    border-bottom: 1px solid silver;
+    top: 0px;
+    width: 100%;
+}
 /*--------------------------------------------------------------
 # Primary Nav
 --------------------------------------------------------------*/
@@ -710,7 +721,6 @@ body {
 
 .menu-header li {
 	float: none;
-	position: relative;
 }
 
 .menu-header a {
@@ -739,7 +749,6 @@ body {
 
 
 .menu-header li {
-    position: relative;
     display: inline-block;
     margin-top: .4375em;
     padding-top: .4375em;
@@ -756,7 +765,6 @@ body {
 /*--------------------------------------------------------------
 # Social menu links (SVG icons)
 --------------------------------------------------------------*/
-
 .menu-icons-navigation ul {
     display: block;
     margin: 0;
@@ -765,7 +773,6 @@ body {
 }
 
 .menu-icons-navigation ul li {
-    position: relative;
     display: inline-block;
     line-height: 1;
     margin: 0 .209875em;
