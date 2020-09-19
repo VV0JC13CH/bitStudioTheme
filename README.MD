@@ -24,6 +24,7 @@ The clean, fast, standards-compliant code ensures bitStudioTheme is Search Engin
 
 ### Installation
 
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+1. Go to releases in this repo and download bitStudioTheme-<version>.zip
+2. In your Wordpress admin panel, go to Appearance > Themes and click the Add New button.
+3. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
+4. Click Activate to use your new theme right away.
