@@ -1,4 +1,4 @@
-=== bitStudioTheme ===
+### bitStudioTheme Wordpress minimalistic theme
 
 Contributors: Wojciech Bobrowski
 Requires at least: 4.0
@@ -14,7 +14,7 @@ A starter theme called bitStudioTheme.
 bitStudioTheme WordPress Theme, Copyright 2019 Wojciech Bobrowski
 bitStudioTheme is distributed under the terms of the GNU GPL
 
-== Description ==
+### Description
 
 bitStudioTheme is fast, simple and easy to customize!
 
@@ -22,7 +22,7 @@ bitStudioTheme uses very minimal, low-specificity CSS rules, making it very easy
 
 The clean, fast, standards-compliant code ensures bitStudioTheme is Search Engine Optimized (SEO).
 
-== Installation ==
+### Installation
 ![Thumb](README.png)
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
