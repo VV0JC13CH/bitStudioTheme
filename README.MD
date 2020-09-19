@@ -12,7 +12,6 @@ Tags: one-column, custom-menu, editor-style, featured-images, full-width-templat
 
 A starter theme called bitStudioTheme.
 
-bitStudioTheme WordPress Theme, Copyright 2019 Wojciech Bobrowski
 bitStudioTheme is distributed under the terms of the GNU GPL
 
 ### Description
