@@ -1,7 +1,7 @@
-## bitStudioTheme
-#####Wordpress minimalistic theme
+## bitStudioTheme for Wordpress
+![Thumb](README.png)
 
-Contributors: Wojciech Bobrowski \
+Contributors: [Wojciech Bobrowski](https://bitstudio.dev) \
 Requires at least: 4.0 \
 Tested up to: 5.2 \
 Stable tag: 1.0.0 (NOT YET) \
@@ -24,7 +24,7 @@ bitStudioTheme uses very minimal, low-specificity CSS rules, making it very easy
 The clean, fast, standards-compliant code ensures bitStudioTheme is Search Engine Optimized (SEO).
 
 ### Installation
-![Thumb](README.png)
+
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
