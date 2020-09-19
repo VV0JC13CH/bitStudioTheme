@@ -1,12 +1,13 @@
-### bitStudioTheme Wordpress minimalistic theme
+## bitStudioTheme
+#####Wordpress minimalistic theme
 
-Contributors: Wojciech Bobrowski
-Requires at least: 4.0
-Tested up to: 5.2
-Stable tag: 1.0.0 (NOT YET)
-License: GPLv3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-GitHub Theme URI: https://github.com/bitStudioDev/bitStudioTheme
+Contributors: Wojciech Bobrowski \
+Requires at least: 4.0 \
+Tested up to: 5.2 \
+Stable tag: 1.0.0 (NOT YET) \
+License: GPLv3 or later \
+License URI: https://www.gnu.org/licenses/gpl-3.0.html \
+GitHub Theme URI: https://github.com/bitStudioDev/bitStudioTheme \
 Tags: one-column, custom-menu, editor-style, featured-images, full-width-template, threaded-comments, translation-ready, blog
 
 A starter theme called bitStudioTheme.
